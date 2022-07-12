@@ -154,4 +154,10 @@
     .tariff__list {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
+    .description {
+        display: none;
+    }
+    .description.description-active {
+        display: block;
+    }
 }

@@ -2,6 +2,7 @@ const tariffActive = () => {
     let tariffItem = document.querySelectorAll('.js-tariff-item');
     let tariffButton = document.querySelectorAll('.js-tariff-button');
     let buttonActive2 = document.querySelector('.tariff-active .js-tariff-button')
+    let checkbox = document.querySelectorAll('.js-tariff-checkbox');
     let test = document.querySelector('.test')
     function myClick() {
         test.scrollIntoView({
@@ -31,6 +32,12 @@ const tariffActive = () => {
                 });
             })
 
+            checkbox.forEach((el) => {
+                el.src = "./images/checkbox.svg"
+            })
+
+            let checkboxActive = document.querySelector('.tariff-active .js-tariff-checkbox')
+            checkboxActive.src = "./images/checkboxActive.svg"
         });
 
     });

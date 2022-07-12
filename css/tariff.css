@@ -22,6 +22,10 @@
     border: 1px solid #CECECE;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
+}
+.tariff__item.tariff-active {
+    border: 1px solid #F8AF00;
 }
 .tariff-row.reduction {
     display: flex;
@@ -96,10 +100,10 @@
 .tariff-row__icons_line {
     margin: 0 4px;
 }
-.tariff-btn {
+.tariff-btn-inner {
     margin: 32px;
 }
-.tariff-btn__gray {
+.tariff-btn {
     width: 100%;
     padding: 16px 0;
     font-size: 16px;
@@ -107,6 +111,11 @@
     border-radius: 8px;
     color: #FFFFFF;
     border: none;
+    cursor: pointer;
+}
+.tariff-active .tariff-btn {
+    background: #F8AF00;
+    color: #FFFFFF;
 }
 .tariff__item-first-mouth .tariff__content {
     margin-top: 41px;
@@ -119,4 +128,14 @@
 }
 .tariff-row-gray .tariff-row__text {
     color: #CECECE;
+}
+
+
+
+.test {
+    display: block;
+    border: 1px solid gray;
+    margin-top: 200px;
+    width: 500px;
+    height: 500px;
 }

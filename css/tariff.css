@@ -1,0 +1,122 @@
+.tariff {
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-family: "helveticaneuecyr_roman", sans-serif;
+}
+
+.tariff__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+    list-style-type: none;
+    margin-top: 50px;
+}
+.tariff__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+    border-radius: 10px;
+    position: relative;
+}
+.tariff-row.reduction {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    margin-top: 0;
+    top: 0;
+    right: 0;
+}
+.share {
+    background: #4AAB50;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+.share_radius {
+    border-top-right-radius: 10px;
+}
+.vip {
+    background-color: #B955D3;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-top-right-radius: 10px;
+}
+.tariff__content {
+    margin-top: 25px;
+    padding: 0 8px 0 28px;
+}
+.tariff-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+}
+.tariff-row__icons_indent {
+    margin-top: 10px;
+}
+.tariff-row__time {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+}
+.tariff-row__count {
+    font-size: 42px;
+    font-weight: 700;
+    color: #008DDC;
+}
+.tariff-row__count-mouth {
+    font-size: 22px;
+}
+.tariff-row__main-payment, .tariff-row__mount-payment {
+    font-size: 12px;
+    color: #CACACA;
+}
+.tariff-row__text {
+    font-size: 12px;
+    color: #000000;
+}
+.tariff-row__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #CECECE;
+    border-radius: 6px;
+    padding: 3px 6px;
+}
+.tariff-row__icons_line {
+    margin: 0 4px;
+}
+.tariff-btn {
+    margin: 32px;
+}
+.tariff-btn__gray {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 16px;
+    background: #CECECE;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: none;
+}
+.tariff__item-first-mouth .tariff__content {
+    margin-top: 41px;
+}
+.tariff__item-first-mouth .tariff__content > .tariff-row:first-child {
+    margin-top: 0;
+}
+.tariff-row-day {
+    justify-content: flex-end;
+}
+.tariff-row-gray .tariff-row__text {
+    color: #CECECE;
+}

@@ -7,17 +7,18 @@ const tariffActive = () => {
     let paymentMethods = document.querySelector('.payment-methods')
 
     function isScroll() {
-        paymentMethods.scrollIntoView({
-            behavior: "smooth",
-            block:    "start"
-        });
+        if (buttonActive.innerHTML === "перейти к оплате") {
+            paymentMethods.scrollIntoView({
+                behavior: "smooth",
+                block:    "start"
+            });
+        }
         buttonActive.removeEventListener('click', isScroll);
     }
     buttonActive.addEventListener('click', isScroll);
 
     tariffItem.forEach((el) => {
         el.addEventListener('click', function () {
-
             tariffItem.forEach((el) => {
                 if (el.classList.contains('tariff-active')) {
                     el.classList.remove('tariff-active')
@@ -34,10 +35,12 @@ const tariffActive = () => {
             buttonActive.innerHTML = "перейти к оплате";
 
             buttonActive.addEventListener('click', function () {
-                paymentMethods.scrollIntoView({
-                    behavior: "smooth",
-                    block:    "start"
-                });
+                if (buttonActive.innerHTML === "перейти к оплате") {
+                    paymentMethods.scrollIntoView({
+                        behavior: "smooth",
+                        block:    "start"
+                    });
+                }
             })
 
             checkbox.forEach((el) => {

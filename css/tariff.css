@@ -18,6 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 255px;
     background: #FFFFFF;
     border: 1px solid #CECECE;
     border-radius: 10px;
@@ -166,6 +167,9 @@
 @media screen and (max-width: 991px) {
     .tariff__list {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+    .tariff__item {
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 767px) {

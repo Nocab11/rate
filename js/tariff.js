@@ -4,9 +4,9 @@ const tariffActive = () => {
     let buttonActive2 = document.querySelector('.tariff-active .js-tariff-button')
     let checkbox = document.querySelectorAll('.js-tariff-checkbox');
     let description = document.querySelectorAll('.description');
-    let test = document.querySelector('.test')
+    let paymentMethods = document.querySelector('.payment-methods')
     function myClick() {
-        test.scrollIntoView({
+        paymentMethods.scrollIntoView({
             behavior: "smooth",
             block:    "start"
         });
@@ -27,7 +27,7 @@ const tariffActive = () => {
             let buttonActive = document.querySelector('.tariff-active .js-tariff-button')
             buttonActive.innerHTML = "перейти к оплате";
             buttonActive.addEventListener('click', function () {
-                test.scrollIntoView({
+                paymentMethods.scrollIntoView({
                     behavior: "smooth",
                     block:    "start"
                 });

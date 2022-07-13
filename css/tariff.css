@@ -62,11 +62,12 @@
 .tariff-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin-top: 17px;
+    position: relative;
 }
 .tariff-row__icons_indent {
-    margin-top: 10px;
+    margin-top: 21px;
 }
 .tariff-row__time {
     font-style: normal;
@@ -78,6 +79,10 @@
     font-size: 42px;
     font-weight: 700;
     color: #008DDC;
+}
+.tariff-checkbox {
+    position: relative;
+    top: -4px;
 }
 .tariff-row__count-mouth {
     font-size: 22px;
@@ -97,6 +102,9 @@
     border: 1px solid #CECECE;
     border-radius: 6px;
     padding: 3px 6px;
+    position: absolute;
+    right: 0;
+    top: -10px;
 }
 .tariff-row__icons_line {
     margin: 0 4px;

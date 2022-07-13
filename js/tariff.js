@@ -1,31 +1,38 @@
 const tariffActive = () => {
     let tariffItem = document.querySelectorAll('.js-tariff-item');
     let tariffButton = document.querySelectorAll('.js-tariff-button');
-    let buttonActive2 = document.querySelector('.tariff-active .js-tariff-button')
+    let buttonActive = document.querySelector('.tariff-active .js-tariff-button')
     let checkbox = document.querySelectorAll('.js-tariff-checkbox');
     let description = document.querySelectorAll('.description');
     let paymentMethods = document.querySelector('.payment-methods')
-    function myClick() {
+
+    function isScroll() {
         paymentMethods.scrollIntoView({
             behavior: "smooth",
             block:    "start"
         });
-        buttonActive2.removeEventListener('click', myClick);
+        buttonActive.removeEventListener('click', isScroll);
     }
-    buttonActive2.addEventListener('click', myClick);
+    buttonActive.addEventListener('click', isScroll);
+
     tariffItem.forEach((el) => {
         el.addEventListener('click', function () {
+
             tariffItem.forEach((el) => {
                 if (el.classList.contains('tariff-active')) {
                     el.classList.remove('tariff-active')
                 }
             });
+
             tariffButton.forEach((el) => {
                 el.innerHTML = "выбрать"
             });
+
             this.classList.add('tariff-active');
+
             let buttonActive = document.querySelector('.tariff-active .js-tariff-button')
             buttonActive.innerHTML = "перейти к оплате";
+
             buttonActive.addEventListener('click', function () {
                 paymentMethods.scrollIntoView({
                     behavior: "smooth",

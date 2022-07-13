@@ -75,6 +75,9 @@
     font-size: 14px;
     color: #000000;
 }
+.tariff-row-head {
+    margin-top: 10px;
+}
 .tariff-row__count {
     font-size: 42px;
     font-weight: 700;
@@ -83,6 +86,9 @@
 .tariff-checkbox {
     position: relative;
     top: -4px;
+}
+.tariff-row-subhead {
+    margin-top: 10px;
 }
 .tariff-row__count-mouth {
     font-size: 22px;
@@ -110,7 +116,7 @@
     margin: 0 4px;
 }
 .tariff-btn-inner {
-    margin: 32px;
+    margin: 26px 32px;
 }
 .tariff-btn {
     width: 100%;
